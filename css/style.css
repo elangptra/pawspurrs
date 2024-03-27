@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+}
+
+.poppins-regular {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-regular-italic {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    background-color: greenyellow;
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 200px;
+}
+
+.hero-bg {
+    background: url(../assets/images/hero-img.png) no-repeat;
+    background-size: cover;
+    height: 1024px;
+}
+
+.container {
+    max-width: 1500px;
+}
+
+/* Navbar Start */
+.navbar {
+    padding: 20px;
+}
+
+.navbar .nav-wrapper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-wrapper .logo {
+    width: 113px;
+    height: 83px;
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-wrapper .menu .menu-link {
+    font-size: 1.25rem;
+    font-family: var(--main-font);
+    color: #fff;
+    font-weight: 600;
+}
+/* Navbar End */
+
+/* Beranda Start */
+.home .home-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-wrapper .content-left {
+    flex: 0 0 50%;
+}
+
+.home-wrapper .heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 64px;
+}
+
+.home-wrapper .subheading {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.home-wrapper .btn-login {
+    text-align: center;
+    padding: 15px 70px;
+    height: 50px;
+    width: 220px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+.home-wrapper .content-right {
+    flex: 0 0 50%;
+}
+/* Beranda End */
