@@ -1,2 +1,2 @@
 # pawspurrs
-Project web base untuk memenuhi kegiatan micro challenge Infinite Learning
+Project untuk memenuhi kegiatan micro challenge di Infinite Learning
