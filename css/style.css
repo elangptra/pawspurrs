@@ -2,6 +2,8 @@
 
 :root {
     --main-font: 'Poppins', sans-serif;
+    --main-font-color: #005583;
+    --light-blue-color: #E6F4FB;
 }
 
 .poppins-regular {
@@ -41,7 +43,7 @@
 }
 
 body {
-    background-color: greenyellow;
+    background-color: white;
     font-family: var(--main-font);
 }
 
@@ -145,3 +147,122 @@ section {
     flex: 0 0 50%;
 }
 /* Beranda End */
+
+/* Banner Start */
+.hero-banner .banner-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner-wrapper .content-left {
+    flex: 0 0 40%;
+}
+
+.banner-wrapper .hero-banner-img{
+    width: 315px;
+    height: 485px;
+    flex-shrink: 0;
+    margin-left:100px;
+    margin-right: auto;
+    display: block;
+}
+
+.banner-wrapper .content-right {
+    flex: 0 0 60%;
+}
+
+.banner-wrapper .hero-banner-text {
+    display: flex;
+    width: 610px;
+    height: 137px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+}
+
+.banner-wrapper .hero-banner-bg {
+    width: 1440px;
+    height: 417px;
+    flex-shrink: 0;
+    border-radius: 81px;
+    background: var(--light-blue-color);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Banner End */
+
+/* Body Tentang Start */
+.body-tentang .tentang-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tentang-wrapper .content-left {
+    flex: 0 0 50%;
+}
+
+.tentang-wrapper .tentang-heading {
+    display: flex;
+    width: 295px;
+    height: 55px;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.tentang-wrapper .tentang-underline {
+    background: url(../assets/icons/heading-underline.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.tentang-wrapper .tentang-subheading {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    line-height: 32px;
+    max-width: 700px;
+}
+
+.tentang-wrapper .content-right {
+    flex: 0 0 50%;
+}
+
+.tentang-wrapper .tentang-img {
+    width: 505px;
+    height: 337px;
+    flex-shrink: 0;
+    /* border-radius: 77px; */
+    float: right;
+    margin-right: 30px;
+}
+
+.tentang-wrapper .tentang-img-circle {
+    background-image: url(../assets/icons/circle-fireworks.png) ;
+    background-size: contain;
+    width: 329px;
+    height: 329px;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+/* Body Tentang End */
