@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  --main-font: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pawspurrs/assets/images/artikelbg.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.poppins-regular {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.user-box {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+section {
+  margin-top: 200px;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+/* Navbar Start */
+.navbar {
+  padding: 20px;
+}
+
+.navbar .nav-wrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-wrapper .logo {
+  width: 113px;
+  height: 83px;
+}
+
+.nav-wrapper .menu-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-wrapper .menu .menu-link {
+  font-size: 1.25rem;
+  font-family: var(--main-font);
+  color: #fff;
+  font-weight: 600;
+}
+/* Navbar End */
+main {
+  margin-top: 50px;
+}
+
+/* Style untuk bagian kategori */
+.Kategori {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+.search {
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-left: 80%;
+}
+
+.search input {
+  background: transparent;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding-left: 40px;
+  outline: none;
+  color: black;
+}
+
+.search a {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search i {
+  color: black;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 100px; /* Menambahkan ruang di bawah gambar */
+  margin-top: 100px;
+}
+
+.image div {
+  position: relative; /* Menjadikan posisi relatif untuk mengatur posisi absolut dari tombol */
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  position: relative; /* Menjadikan posisi relatif untuk mengatur posisi absolut dari tombol */
+}
+
+.article_btn {
+  position: absolute;
+  top: 70%; /* Menempatkan tombol di tengah-tengah vertikal */
+  left: 45%; /* Menempatkan tombol di tengah-tengah horizontal */
+  transform: translate(-50%, -50%); /* Memindahkan tombol ke tengah */
+  background-color: #008DDA; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 5px; /* Membuat sudut tombol terbulat */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Efek transisi saat tombol dihover */
+}
+
+.article_btn:hover {
+  background-color: #3b3b3b; /* Warna latar belakang tombol saat dihover */
+}
+
+#popular-articles {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white; /* Latar belakang putih untuk konten artikel */
+  margin-bottom: 10%; /* Menambahkan ruang di bawah bagian Artikel Populer */
+  margin-top: 10%;
+  position: relative; /* Menggunakan posisi relatif untuk judul */
+}
+
+#popular-articles h1 {
+  margin-bottom: 20px;
+  position: absolute; /* Menggunakan posisi absolut untuk judul */
+  top: -50px; /* Mengatur judul di luar area dengan latar belakang putih */
+  left: 50%; /* Menengahkan judul */
+  transform: translateX(-50%); /* Menengahkan judul */
+}
+
+#popular-articles article {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+article {
+  font-size: 16px; /* Ukuran teks artikel */
+  line-height: 1.6; /* Tinggi baris untuk memperbaiki keterbacaan */
+}
+
+#popular-articles h3 {
+  color: black;
+  font-size: 25px; /* Ukuran teks judul artikel */
+  margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+}
+
+#popular-articles p {
+  font-size: 20px; /* Ukuran teks paragraf */
+  color: black;
+  margin-bottom: 15px; /* Jarak antara paragraf */
+}
+/* Style untuk tombol "Learn More" */
+.learn_more_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008DDA;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.learn_more_btn:hover {
+  background-color: #3b3b3b;
+}
