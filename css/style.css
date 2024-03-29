@@ -4,6 +4,7 @@
     --main-font: 'Poppins', sans-serif;
     --main-font-color: #005583;
     --light-blue-color: #E6F4FB;
+    --footer-background-color: #00314C;
 }
 
 .poppins-regular {
@@ -43,7 +44,8 @@
 }
 
 body {
-    background-color: white;
+    background: url(../assets/images/background.png) no-repeat;
+    background-size: cover;
     font-family: var(--main-font);
 }
 
@@ -141,6 +143,7 @@ section {
     width: 220px;
     border-radius: 50px;
     background: #fff;
+    color: var(--footer-background-color);
 }
 
 .home-wrapper .content-right {
@@ -258,11 +261,177 @@ section {
 }
 
 .tentang-wrapper .tentang-img-circle {
+    background-image: url(../assets/icons/circle-fireworks.png);
+    background-size: contain;
+    width: 329px;
+    height: 329px;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+/* Body Tentang End */
+
+/* Body Tujuan Start */
+.body-tujuan .tujuan-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tujuan-wrapper .content-left {
+    flex: 0 0 50%;
+}
+
+.tujuan-wrapper .tujuan-img {
+    width: 505px;
+    height: 337px;
+    flex-shrink: 0;
+    /* border-radius: 77px; */
+    float: left;
+    margin-right: 30px;
+}
+
+.tujuan-wrapper .tujuan-img-circle {
     background-image: url(../assets/icons/circle-fireworks.png) ;
     background-size: contain;
     width: 329px;
     height: 329px;
-    margin-top: 10px;
-    margin-left: 120px;
+    margin-top: 5px;
+    margin-left: 270px;
 }
-/* Body Tentang End */
+
+.tujuan-wrapper .content-right {
+    flex: 0 0 50%;
+}
+
+.tujuan-wrapper .tujuan-heading {
+    display: flex;
+    width: 295px;
+    height: 55px;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.tujuan-wrapper .tujuan-underline {
+    background: url(../assets/icons/heading-underline.png) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.tujuan-wrapper .tujuan-subheading {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    line-height: 32px;
+    max-width: 700px;
+}
+/* Body Tujuan End */
+
+/* Footer Start */
+footer {
+    background-color: var(--footer-background-color);
+}
+
+.footer {
+    margin-top: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.col-1-footer .logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.3px;
+    flex-shrink: 0;
+}
+
+.sosmed-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sosmed-icons i {
+    font-size: 2.3rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.col-2-footer h3 {
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.col-2-footer ul {
+    margin-top: 20px;
+}
+
+.col-2-footer ul li {
+    margin-top: 15px;
+    color: white;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.col-3-footer h3 {
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.col-3-footer ul {
+    margin-top: 20px;
+}
+
+.col-3-footer ul li {
+    margin-top: 15px;
+}
+
+.col-3-footer ul li a {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.col-4-footer h3 {
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.col-4-footer ul {
+    margin-top: 20px;
+}
+
+.col-4-footer ul li {
+    margin-top: 15px;
+}
+
+.col-4-footer ul li a {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+/* Footer End */
