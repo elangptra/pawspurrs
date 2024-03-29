@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --footer-background-color: #00314C;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pawspurrs/assets/images/artikelbg.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.poppins-regular {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.user-box {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.user-box div {
+  display: flex;
+  align-items: center;
+}
+
+.user-box p {
+  margin-right: 10px;
+}
+
+section {
+  margin-top: 200px;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+/* Navbar Start */
+.navbar {
+  padding: 20px;
+}
+
+.navbar .nav-wrapper {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-wrapper .logo {
+  width: 113px;
+  height: 83px;
+}
+
+.nav-wrapper .menu-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-wrapper .menu .menu-link {
+  font-size: 1.25rem;
+  font-family: var(--main-font);
+  color: #fff;
+  font-weight: 600;
+}
+/* Navbar End */
+main {
+  margin-top: 50px;
+}
+
+/* Style untuk bagian kategori */
+.Kategori {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+.search {
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-left: 80%;
+}
+
+.search input {
+  background: transparent;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding-left: 40px;
+  outline: none;
+  color: black;
+}
+
+.search a {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search i {
+  color: black;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 100px; /* Menambahkan ruang di bawah gambar */
+  margin-top: 100px;
+}
+
+.image div {
+  position: relative; /* Menjadikan posisi relatif untuk mengatur posisi absolut dari tombol */
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  position: relative; /* Menjadikan posisi relatif untuk mengatur posisi absolut dari tombol */
+}
+
+.article_btn {
+  position: absolute;
+  top: 70%; /* Menempatkan tombol di tengah-tengah vertikal */
+  left: 45%; /* Menempatkan tombol di tengah-tengah horizontal */
+  transform: translate(-50%, -50%); /* Memindahkan tombol ke tengah */
+  background-color: #008DDA; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 5px; /* Membuat sudut tombol terbulat */
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Efek transisi saat tombol dihover */
+}
+
+.article_btn:hover {
+  background-color: #3b3b3b; /* Warna latar belakang tombol saat dihover */
+}
+
+/* existing CSS styles */
+#popular-articles {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 0%;
+  margin-top: 10%;
+  position: relative;
+}
+
+#popular-articles h1 {
+  margin-bottom: 20px;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.article-item img {
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+/* Style for article content */
+.article-content {
+  padding: 15px;
+  color: black;
+  text-align: left; /* Menjaga isi artikel tetap sejajar ke kiri */
+}
+
+.article-content h2 {
+  margin-bottom: 20px; /* Atur jarak antara H3 dan paragraf */
+}
+
+.article-content p {
+  margin-bottom: 20px; /* Atur jarak antara paragraf dan elemen berikutnya */
+}
+
+/* Button style for "Learn More" */
+.learn_more_btn {
+  display: inline-block;
+  background-color: #008DDA;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 5px;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  /*Addmargintoseparatefromtext*//*Untukmenengahkantombolsecarahorizontal*/display: flex;
+  justify-content: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.learn_more_btn:hover {
+    background-color: #3b3b3b;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer {
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.col-1-footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.3px;
+  flex-shrink: 0;
+}
+
+.sosmed-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sosmed-icons i {
+  font-size: 2.3rem;
+  color: white;
+  margin-top: 20px;
+}
+
+.col-2-footer h3 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.col-2-footer ul {
+  margin-top: 20px;
+}
+
+.col-2-footer ul li {
+  margin-top: 15px;
+  color: white;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.col-3-footer h3 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.col-3-footer ul {
+  margin-top: 20px;
+}
+
+.col-3-footer ul li {
+  margin-top: 15px;
+}
+
+.col-3-footer ul li a {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.col-4-footer h3 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.col-4-footer ul {
+  margin-top: 20px;
+}
+
+.col-4-footer ul li {
+  margin-top: 15px;
+}
+
+.col-4-footer ul li a {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
