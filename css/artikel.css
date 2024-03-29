@@ -2,6 +2,7 @@
 
 :root {
   --main-font: "Poppins", sans-serif;
+  --footer-background-color: #00314C;
 }
 
 body {
@@ -60,6 +61,15 @@ body {
 .user-box {
   margin-left: auto;
   margin-right: 5%;
+}
+
+.user-box div {
+  display: flex;
+  align-items: center;
+}
+
+.user-box p {
+  margin-right: 10px;
 }
 
 section {
@@ -187,56 +197,180 @@ main {
   background-color: #3b3b3b; /* Warna latar belakang tombol saat dihover */
 }
 
+/* existing CSS styles */
 #popular-articles {
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: white; /* Latar belakang putih untuk konten artikel */
-  margin-bottom: 10%; /* Menambahkan ruang di bawah bagian Artikel Populer */
+  background-color: white;
+  margin-bottom: 0%;
   margin-top: 10%;
-  position: relative; /* Menggunakan posisi relatif untuk judul */
+  position: relative;
 }
 
 #popular-articles h1 {
   margin-bottom: 20px;
-  position: absolute; /* Menggunakan posisi absolut untuk judul */
-  top: -50px; /* Mengatur judul di luar area dengan latar belakang putih */
-  left: 50%; /* Menengahkan judul */
-  transform: translateX(-50%); /* Menengahkan judul */
-}
-
-#popular-articles article {
-  padding: 20px;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
-}
-article {
-  font-size: 16px; /* Ukuran teks artikel */
-  line-height: 1.6; /* Tinggi baris untuk memperbaiki keterbacaan */
 }
 
-#popular-articles h3 {
-  color: black;
-  font-size: 25px; /* Ukuran teks judul artikel */
-  margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+.article-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#popular-articles p {
-  font-size: 20px; /* Ukuran teks paragraf */
-  color: black;
-  margin-bottom: 15px; /* Jarak antara paragraf */
+.article-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    text-align: left;
 }
-/* Style untuk tombol "Learn More" */
+
+.article-item img {
+    width: 100%; 
+    border-radius: 5px; 
+}
+
+/* Style for article content */
+.article-content {
+  padding: 15px;
+  color: black;
+  text-align: left; /* Menjaga isi artikel tetap sejajar ke kiri */
+}
+
+.article-content h2 {
+  margin-bottom: 20px; /* Atur jarak antara H3 dan paragraf */
+}
+
+.article-content p {
+  margin-bottom: 20px; /* Atur jarak antara paragraf dan elemen berikutnya */
+}
+
+/* Button style for "Learn More" */
 .learn_more_btn {
   display: inline-block;
-  padding: 10px 20px;
   background-color: #008DDA;
   color: white;
+  padding: 10px 12px;
   border-radius: 5px;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
+  /*Addmargintoseparatefromtext*//*Untukmenengahkantombolsecarahorizontal*/display: flex;
+  justify-content: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .learn_more_btn:hover {
-  background-color: #3b3b3b;
+    background-color: #3b3b3b;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer {
+  margin-top: 0px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.col-1-footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.3px;
+  flex-shrink: 0;
+}
+
+.sosmed-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sosmed-icons i {
+  font-size: 2.3rem;
+  color: white;
+  margin-top: 20px;
+}
+
+.col-2-footer h3 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.col-2-footer ul {
+  margin-top: 20px;
+}
+
+.col-2-footer ul li {
+  margin-top: 15px;
+  color: white;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.col-3-footer h3 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.col-3-footer ul {
+  margin-top: 20px;
+}
+
+.col-3-footer ul li {
+  margin-top: 15px;
+}
+
+.col-3-footer ul li a {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.col-4-footer h3 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.col-4-footer ul {
+  margin-top: 20px;
+}
+
+.col-4-footer ul li {
+  margin-top: 15px;
+}
+
+.col-4-footer ul li a {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
 }
