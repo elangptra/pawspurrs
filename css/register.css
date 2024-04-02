@@ -1,0 +1,102 @@
+*{
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .poppins-semibold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+  
+    .regist{
+      height: 100vh;
+    }
+  
+    .header h1 {
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72px; /* 112.5% */
+      color: #41C9E2;
+      margin-top: 123px;
+     
+    }
+  
+    .regist-form label{
+      /* Body L */
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 133.333% */
+      margin-top: 45px;
+    }
+  
+    .regist-form input {
+      width: 505px;
+      height: 64px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 2px solid #959595;
+  
+    }
+  
+    .regist-form a {
+      color: #000;text-align: right;
+      /* Body M */
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+      margin-top: 10px;
+     
+    }
+    .regist-form .signin {
+        color: #FFF;
+        text-align: center;
+        /* Body L */
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 133.333% */
+        width: 505px;
+        height: 84px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: #008DDA;
+        margin-top: 63px;
+  
+    }
+  
+    .regist-form span {
+      color: #000;
+      /* Body M */
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+    }
+  
+    .regist-form span a {
+      color: #0D8BFF;
+      /* Body M */
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  
+    .img-thumbnail{
+      width: 710px;
+      height: 1024px;
+      margin-left: 50px;
+    }
+  
+  }
